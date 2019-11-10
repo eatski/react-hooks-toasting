@@ -7,7 +7,7 @@ const file = (...args) => path.resolve(__dirname, ...args);
 const config =  {
   mode: "development",
   entry: {
-    main: ["@babel/polyfill", file("src", "index.ts")]
+    main: [file("src", "index.ts")]
   },
   output: {
     path: file("dist"),
