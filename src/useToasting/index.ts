@@ -3,14 +3,14 @@ import {
   ToastingConfig,
   PropsToastReceives as _PropsToastReceives
 } from "./core";
-import { renderToastArray, ToastComponent } from "./render";
+import { renderToastArray, ToastComponent as _ToastComponent } from "./render";
 
 export interface Toasting<T = string> {
   renderToast(): JSX.Element;
   dispatch(body: T): void;
 }
 
-export { ToastComponent };
+export type ToastComponent<T = string> = _ToastComponent<T>;
 
 export type PropsToastReceives<T = string> = _PropsToastReceives<T>;
 

@@ -1,21 +1,49 @@
-.App {
-    font-family: sans-serif;
-    text-align: center;
-}
 .wrapper {
     position: absolute;
     top: 0;
     width: 100%;
 }
 
-.toast {
+.add-btn {
+    background-color: #00cccc;
+    color: white;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.add-btn:active {
+    background-color: #00aaaa;
+}
+
+.toast.simple {
     transition: right 500ms linear, opacity 1000ms, top 500ms;
     position: absolute;
-    background-color: greenyellow;
-    padding: 8px;
-    margin: 35px 20px;
+    background-color: #66ff99;
+    padding: 8px 20px;
+    margin: 40px 20px;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.toast.colorful.container {
+    transition: right 500ms linear, opacity 1000ms, top 500ms;
+    position: absolute;
+    padding: 8px 20px;
+    margin: 40px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    color:#333333;
+}
+
+.toast.colorful .name {
+    position: relative;
+    font-style: italic;
+    display: inline-block;
+    font-weight: bolder;
 }
 
 .entering {
@@ -29,6 +57,6 @@
 }
 
 .entered {
-right: 0;
-opacity: 1;
+    right: 0;
+    opacity: 1;
 }
