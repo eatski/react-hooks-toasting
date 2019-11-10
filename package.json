@@ -1,16 +1,15 @@
 {
-  "name": "webpack-proto",
-  "version": "1.0.0",
+  "name": "react-hooks-toasting",
+  "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "public/index.js",
   "scripts": {
-    "build": "webpack",
-    "dev": "webpack-dev-server",
+    "build": "tsc -d --project ./tsconfig.build.json",
     "test": "jest",
     "lint": "eslint '**/*.+(ts|tsx)'",
     "storybook": "start-storybook"
   },
-  "author": "",
+  "author": "hagaitski",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.7.2",
