@@ -19,6 +19,6 @@ jobs:
       run: |
         npm ci
         npm run sample-build
-        npm run deploy
+        npm run sample-deploy
       env:
         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}

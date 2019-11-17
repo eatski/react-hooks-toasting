@@ -7,9 +7,9 @@
     "build": "tsc -d --project ./tsconfig.build.json",
     "test": "jest",
     "lint": "eslint '**/*.+(ts|tsx)'",
-    "storybook": "start-storybook",
+    "dev": "start-storybook",
     "sample-build": "build-storybook -c .storybook -o dist",
-    "deploy": "firebase deploy --only hosting --project sample-app-mahimahi --token $FIREBASE_TOKEN"
+    "sample-deploy": "firebase deploy --project sample-app-mahimahi --token $FIREBASE_TOKEN"
   },
   "author": "hagaitski",
   "license": "ISC",
