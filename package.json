@@ -7,7 +7,8 @@
     "build": "tsc -d --project ./tsconfig.build.json",
     "test": "jest",
     "lint": "eslint '**/*.+(ts|tsx)'",
-    "storybook": "start-storybook"
+    "storybook": "start-storybook",
+    "sample-build": "build-storybook -c .storybook -o dist"
   },
   "author": "hagaitski",
   "license": "ISC",
