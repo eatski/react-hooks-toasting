@@ -8,7 +8,8 @@
     "test": "jest",
     "lint": "eslint '**/*.+(ts|tsx)'",
     "storybook": "start-storybook",
-    "sample-build": "build-storybook -c .storybook -o dist"
+    "sample-build": "build-storybook -c .storybook -o dist",
+    "deploy": "firebase deploy --only hosting --project sample-app-mahimahi --token $FIREBASE_TOKEN"
   },
   "author": "hagaitski",
   "license": "ISC",
@@ -28,6 +29,7 @@
     "eslint-config-prettier": "^6.5.0",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-react": "^7.16.0",
+    "firebase-tools": "^7.7.0",
     "html-webpack-plugin": "^3.2.0",
     "jest": "^24.9.0",
     "node-sass": "^4.13.0",
