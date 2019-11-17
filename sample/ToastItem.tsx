@@ -29,9 +29,9 @@ export const ColorfulToastItem: ToastComponent<ColorfulProps> = ({
 }) => (
   <div
     onClick={remove}
-    className={`toast colorful container ${status}`}
+    className={`toast colorful ${status}`}
     style={{ top: position * 50, backgroundColor: body.color }}
   >
-    Unread message from <span className="name">{body.name}</span>
+    Hello! My name is <span className="name">{body.name}</span>
   </div>
 );

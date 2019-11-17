@@ -13,6 +13,11 @@ module.exports = {
         test: [/\.ts$/,/\.tsx$/],
         exclude: /node_modules/,
         loader: "ts-loader"
+      },
+      {
+        test:[/\.scss$/],
+        exclude: /node_modules/,
+        loader: ["style-loader","css-loader","sass-loader"]
       }
     ]
   },

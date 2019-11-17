@@ -8,7 +8,7 @@ storiesOf("useToast", module)
   .add("simple", () => {
     const { renderToast, dispatch } = useToasting(SimpleToastItem, {
       exitingMS: 1000,
-      displayMS: 5000
+      displayMS: 30000
     });
     return (
       <div>
@@ -18,7 +18,7 @@ storiesOf("useToast", module)
         >
           Toasting!!
         </button>
-        <div className="wrapper">{renderToast()}</div>
+        <div className="toast-wrapper">{renderToast()}</div>
       </div>
     );
   })
@@ -37,7 +37,7 @@ storiesOf("useToast", module)
         >
           Toasting!!
         </button>
-        <div className="wrapper">{renderToast()}</div>
+        <div className="toast-wrapper">{renderToast()}</div>
       </div>
     );
   });
