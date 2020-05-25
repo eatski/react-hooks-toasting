@@ -1,8 +1,9 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import { SimpleToastItem, ColorfulToastItem } from "./ToastItem";
-import { useToasting } from "../src/useToasting";
-import json from "./messages.json";
+import { SimpleToastItem } from "./components/SimpleToastItem";
+import { ColorfulToastItem } from "./components/ColorfulToastItem";
+import { useToasting } from "react-hooks-toasting";
+import json from "./sample.json";
 
 const SimpleMessage = () => {
   const { renderToast, dispatch } = useToasting(SimpleToastItem, {
@@ -26,7 +27,7 @@ const SimpleMessage = () => {
 const ColorfulMessage = () => {
   const { renderToast, dispatch } = useToasting(ColorfulToastItem, {
     exitingMS: 1000,
-    displayMS: 30000
+    displayMS: 3000
   });
   const toasting = () =>
     dispatch(json[Math.floor(Math.random() * json.length)]);

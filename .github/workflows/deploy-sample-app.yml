@@ -1,10 +1,10 @@
-name: Build and Deploy
+name: Build and Deploy Sample App
 on:
   push:	
     branches:	
       - master
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -17,8 +17,9 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - name: Deploy Firebase Hosting
       run: |
+        cd sample-app
         npm ci
-        npm run sample-build
-        npm run sample-deploy
+        npm run build
+        npm run deploy
       env:
         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}

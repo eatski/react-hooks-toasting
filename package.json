@@ -6,10 +6,7 @@
   "scripts": {
     "build": "tsc -d --project ./tsconfig.build.json",
     "test": "jest",
-    "lint": "eslint '**/*.+(ts|tsx)'",
-    "dev": "start-storybook",
-    "sample-build": "build-storybook -c .storybook -o dist",
-    "sample-deploy": "firebase deploy --project sample-app-mahimahi --token $FIREBASE_TOKEN"
+    "lint": "eslint '**/*.+(ts|tsx)'"
   },
   "author": "hagaitski",
   "license": "ISC",
