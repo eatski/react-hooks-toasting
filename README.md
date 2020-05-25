@@ -4,7 +4,7 @@ React Hooks Toasting is a library that uses React Hooks to control animation in 
 
 ## DEMO
 
-[Sample APP](https://sample-app-mahimahi.web.app/)
+[Sample APP](https://react-hooks-toasting.netlify.app/)
 
 ## Getting Started
 
