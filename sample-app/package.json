@@ -18,7 +18,6 @@
     "@storybook/addons": "^5.3.19",
     "@storybook/react": "^5.3.19",
     "babel-loader": "^8.1.0",
-    "firebase-tools": "^8.4.0",
     "linaria": "^1.3.3",
     "react-hooks-toasting": "file:..",
     "ts-loader": "^7.0.5"
