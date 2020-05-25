@@ -12,14 +12,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "firebase-tools": "^8.4.0",
-    "linaria": "^1.3.3",
     "@babel/core": "^7.9.6",
     "@storybook/addon-actions": "^5.3.19",
     "@storybook/addon-links": "^5.3.19",
     "@storybook/addons": "^5.3.19",
     "@storybook/react": "^5.3.19",
     "babel-loader": "^8.1.0",
-    "react-hooks-toasting": "file:.."
+    "firebase-tools": "^8.4.0",
+    "linaria": "^1.3.3",
+    "react-hooks-toasting": "file:..",
+    "ts-loader": "^7.0.5"
   }
 }
