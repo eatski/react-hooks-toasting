@@ -18,6 +18,7 @@ jobs:
     - name: Build Sample App
       run: |
         npm i
+        npm run build
         cd sample-app
         npm ci
         npm run build
