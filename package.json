@@ -5,6 +5,7 @@
   "main": "public/index.js",
   "scripts": {
     "build": "tsc -d --project ./tsconfig.build.json",
+    "watch": "tsc -d --watch --project ./tsconfig.build.json",
     "test": "jest",
     "lint": "eslint '**/*.+(ts|tsx)'"
   },
