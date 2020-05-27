@@ -1,6 +1,6 @@
 {
   "name": "react-hooks-toasting",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "public/index.js",
   "scripts": {
@@ -22,9 +22,11 @@
     "jest": "^24.9.0",
     "prettier": "^1.19.0",
     "ts-jest": "^24.1.0",
-    "typescript": "^3.7.2"
+    "typescript": "^3.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   },
   "peerDependencies": {
-    "react": "^16.8.0"
+    "react": "^16.13.1"
   }
 }

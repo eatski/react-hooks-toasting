@@ -3,11 +3,11 @@
       "sourceMap": true,
       // TSはECMAScript 5に変換
       "strict": true, 
-      "target": "ESNEXT",
+      "target": "ESNext",
       // TSのモジュールはES Modulesとして出力
-      "module": "es2015",
+      "module": "CommonJS",
       // JSXの書式を有効に設定
-      "jsx": "preserve",
+      "jsx": "react",
       "moduleResolution": "node",
       "lib": [
         "es2017",
@@ -20,6 +20,7 @@
       },
       "typeRoots": ["node_modules/@types"],
       "allowSyntheticDefaultImports":true,
-      "resolveJsonModule": true
+      "resolveJsonModule": true,
+      "esModuleInterop": true
     }
   }
