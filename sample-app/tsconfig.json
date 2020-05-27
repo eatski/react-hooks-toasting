@@ -1,25 +1,41 @@
 {
-    "compilerOptions": {
-      "sourceMap": true,
-      // TSはECMAScript 5に変換
-      "strict": true, 
-      "target": "ESNEXT",
-      // TSのモジュールはES Modulesとして出力
-      "module": "es2015",
-      // JSXの書式を有効に設定
-      "jsx": "react",
-      "moduleResolution": "node",
-      "lib": [
-        "es2017",
-        "dom"
-      ],
-      "baseUrl":".",
-      "rootDir": ".",
-      "paths": {
-        "@/*": ["src/*"]
-      },
-      "typeRoots": ["node_modules/@types"],
-      "allowSyntheticDefaultImports":true,
-      "resolveJsonModule": true
-    }
-  }
+  "compilerOptions": {
+    "sourceMap": true,
+    "strict": true,
+    "target": "ESNEXT",
+    "module": "esnext",
+    "jsx": "preserve",
+    "moduleResolution": "node",
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "baseUrl": ".",
+    "rootDir": ".",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    },
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "noEmit": true
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "../**/*.ts"
+  ]
+}
