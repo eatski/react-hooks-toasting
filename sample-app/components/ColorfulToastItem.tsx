@@ -8,28 +8,30 @@ interface ColorfulProps {
 }
 
 const StyledDiv = styled.div`
+  /** positioning */
+  position: fixed;
+  margin-top: 30px;
+  right: 0px;
+  /** animation */
+  transition: transform 500ms, opacity 1000ms, top 500ms;
+  &.entering,
+  &.exiting {
+    transform: translateX(400px);
+    opacity: 0;
+  }
+  &.entered {
+    transform: translateX(-3vw);
+    opacity: 1;
+  }
+  /** others */
   color: #333333;
   max-width: 330px;
   white-space: nowrap;
-  position: absolute;
   border-radius: 5px;
   cursor: pointer;
   padding: 8px 10px;
   text-overflow: ellipsis;
   overflow: hidden;
-  transition: right 500ms linear, opacity 1000ms, top 500ms;
-  &.entering {
-    right: -300px;
-    opacity: 0;
-  }
-  &.exiting {
-    right: -300px;
-    opacity: 0;
-  }
-  &.entered {
-    right: 0;
-    opacity: 1;
-  }
 `;
 
 const StyledSpan = styled.span`
@@ -46,7 +48,10 @@ export const ColorfulToastItem: ToastComponent<ColorfulProps> = ({
   <StyledDiv
     onClick={remove}
     className={status}
-    style={{ top: position * 50, backgroundColor: body.color }}
+    style={{
+      top: `${position * 50}px`,
+      backgroundColor: body.color
+    }}
   >
     Hello! My name is <StyledSpan>{body.name}</StyledSpan>
   </StyledDiv>
